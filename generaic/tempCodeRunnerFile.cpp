@@ -1,0 +1,1 @@
+if(mp.find(a[i])!=mp.end() && mp[a[i]]==1)

@@ -31,6 +31,7 @@ class pair<k,v> {
 
 
 
+
 public class GenericParameters {
     public static void main(String[] args) {
         pair<Integer,Integer> p=new pair<>(1,2);
