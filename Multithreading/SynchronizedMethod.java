@@ -19,22 +19,28 @@ public class SynchronizedMethod {
         
         CreationMethod cr=new CreationMethod();
        Thread t1=new Thread(new Runnable(){
+           long starttime =System.currentTimeMillis();
         @Override
         public void run(){
            // for(int i=0;i<5;i++)
             cr.Display();
 
-            
+            long endttime =System.currentTimeMillis();
+            System.out.println("Total time taken by Thread 1 was " +(endttime-starttime));
         }
         
+        
+
        });
 
        Thread t2=new Thread(new Runnable(){
+        long starttime =System.currentTimeMillis();
         @Override
         public void run(){
           //  for(int i=0;i<5;i++)
             cr.Display();
-
+            long endttime =System.currentTimeMillis();
+            System.out.println("Total time taken by Thread 2 was " +(endttime-starttime));
             
         }
        });
